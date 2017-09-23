@@ -1,21 +1,36 @@
 # TandemNet 
   
-This is the implementation for MICCAI 2017 oral paper titled "TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as Optional Semantic References", Zizhao Zhang et al.
+This is the implementation for the Oral paper titled "TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as Optional Semantic References", Zizhao Zhang et al, in MICCAI 2017. Please find more details in the paper.
+
+
+<img src="https://www.cise.ufl.edu/~zizhao/zzz_files/miccai_2017.png" width="900px"/>
+
+
 
 ## Simple instructions of training the model
 
-### Prepare your training data
-TandemNet takes images and corresponding text (diagnosic reports) as inputs. You need to write your own DataLoader.lua. An example with explanations has been provided in utils/DataLoader.lua. 
+#### Prerequisites
+The code is written in Torch7. Install necessary libraries:
 
-### Training
+  * Torch [https://github.com/torch/distro]
+  * Torch-gnuplot [https://github.com/torch/gnuplot]
+  * Torch-image [https://github.com/torch/image]
+  * Torch-display [https://github.com/szym/display]
+  * Lua-cjson [https://www.kyne.com.au/~mark/software/lua-cjson-manual.html]
+
+
+#### Prepare your training data
+TandemNet takes images and corresponding text (diagnosic reports) as inputs in order to train. You need to write your own DataLoader.lua. An example with detailed explanations has been provided in utils/DataLoader.lua. 
+
+#### Training
     sh scripts/train.sh
 
-### Evaluation
+#### Evaluation
     sh scripts/eval.sh
 
 All results will be saved in the folders inside checkpoints/tandemnet.
 
-## Please consider to cite the paper if it is useful
+### Please consider to cite the paper if it is useful
 ```
 @inproceedings{Zhang2017TandemNet,
 title={TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as 
