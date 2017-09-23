@@ -19,7 +19,7 @@ The code is written in Torch7. Install necessary libraries:
   * Lua-cjson [https://www.kyne.com.au/~mark/software/lua-cjson-manual.html]
 
 
-#### Prepare your training data
+#### Prepare training data
 TandemNet takes images and corresponding text (diagnosic reports) as inputs in order to train. You need to write your own DataLoader.lua. An example with detailed explanations has been provided in utils/DataLoader.lua. 
 
 #### Training
@@ -28,7 +28,7 @@ TandemNet takes images and corresponding text (diagnosic reports) as inputs in o
 #### Evaluation
     sh scripts/eval.sh
 
-All results will be saved in the folders inside checkpoints/tandemnet.
+All results will be organized and saved in the folders inside checkpoints/tandemnet.
 
 ### Please consider to cite the paper if it is useful
 ```
@@ -36,8 +36,7 @@ All results will be saved in the folders inside checkpoints/tandemnet.
 title={TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as 
 Optional Semantic References},
 author={Zhang, Zizhao and Chen, Pingjun and Sapkota, Manish and Yang, Lin},
-booktitle={International Conference on Medical Image Computing and 
-    Computer-Assisted Intervention (MICCAI)},
+booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
 year={2017} 
 }
 ```
