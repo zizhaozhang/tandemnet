@@ -4,10 +4,6 @@
 This is the implementation for the Oral paper titled "TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as Optional Semantic References", Zizhao Zhang et al, in MICCAI 2017. Please find more details in the paper.
 
 
-<img src="https://www.cise.ufl.edu/~zizhao/zzz_files/miccai_2017.png" width="900px"/>
-
-
-
 ## Simple instructions of training the model
 
 #### Prerequisites
