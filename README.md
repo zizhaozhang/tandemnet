@@ -1,5 +1,6 @@
 # TandemNet 
-  
+**Deprecated. See new version at https://github.com/zizhaozhang/distill2**
+
 This is the implementation for the Oral paper titled "TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as Optional Semantic References", Zizhao Zhang et al, in MICCAI 2017. Please find more details in the paper.
 
 
